@@ -25,6 +25,12 @@
             getStatistic() {
                 counterStatistic.getStatistic++
                 return counterStatistic;
+            },
+            zero() {
+                counterStatistic.increase = 0;
+                counterStatistic.decrease = 0;
+                counterStatistic.get = 0;
+                counterStatistic.getStatistic = 0;
             }
         }
 
@@ -36,7 +42,6 @@
     counterInst.decrease(10);
     console.log(counterInst.get());
     console.log(counterInst.getStatistic());
-
 })()
 
 
